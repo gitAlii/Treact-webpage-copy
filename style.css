@@ -12,6 +12,16 @@ html {
     scroll-behavior: smooth;
  }
   
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.para {
+    color:  #7C8BA1;
+    opacity: 0.5;
+}
+ 
 
 .container {
     margin: 16px;
@@ -30,8 +40,32 @@ a {
     transition: opacity 300ms ease;
 }
 
+.white {
+    color: white;
+}
+
 .purple {
     color: #6145ff;
+}
+
+.grey {
+    color: #7C8BA1;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 99999px;
+    background-color: rgba(100, 21, 255, 1);
+    color: rgba(247, 250, 252, 1);
+    border: none;
+    padding: 16px 36px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(66 153 225 );
 }
 
 /*
@@ -113,9 +147,13 @@ Home
 
 */
 
+#home {
+    padding: 60px 0 80px 0;
+}
+
 .home__wrapper {
     display: flex;
-    padding: 6rem 0;
+    padding: 1.5rem 0;
 }
 
 .home__text {
@@ -168,7 +206,13 @@ Emailing section
     background-color: rgba(100, 21, 255, 1);
     color: rgba(247, 250, 252, 1);
     border: none;
-    padding: 16px 36px;
+    padding: 16px 26px;
+    transition: 300ms ease;
+}
+
+.c button:hover {
+    cursor: pointer;
+    background-color: rgb(66 153 225 );
 }
 
 
@@ -195,15 +239,402 @@ Emailing section
     width: 60%;
 }
 
+.small {
+    color: #6145ff;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
 /*
 
 Features 
 
 */
 
-fwrapper {
-    
+.feature-wrapper {
+    margin: 80px 0;
+    text-align: center;
 }
 
 
+.feature__title {
+    color: #243E63;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 24px;
+}
 
+.feature__para {
+    margin-top: 24px;
+}
+
+.service__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.service__icon {
+    display: flex;
+    width: calc(100%/3.7);
+    margin: 0 16px;
+    padding: 32px 8px;
+}
+
+.service__text {
+    margin: 8px 0 0 16px;
+    text-align: left;
+}
+
+.service__icon--edit {
+    width: 66px;
+    height: 66px;
+    padding: 20px;
+    border-radius:  50%;
+    border: #7C8BA1 solid 2px;
+}
+
+.service__text--title {
+    font-size: 24px;
+}
+
+.service__text--para {
+    font-size: 16px;
+    margin: 16px 0 0 0 ;
+    line-height: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    
+}
+
+/*
+
+Work section 
+
+*/
+
+.work__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 80px 0;
+}
+
+
+.work__text {
+    width: 50%;
+    text-align: left; 
+}
+
+.work__text--title {
+    font-size: 48px;
+}
+
+.work__text--para {
+    font-size: 18px;
+    padding: 16px 0 0 0;
+}
+
+.work__img {
+    width: 50%;
+}
+
+.work__btn {
+    margin-top: 32px;
+    transition: 300ms ease;
+}
+
+/*
+
+Steps 
+
+*/
+
+.steps__wrapper {
+    display: flex;
+    padding: 80px 0;
+    text-align: left;
+}
+
+.steps__listing {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__list{
+    margin-top: 32px;
+    display: flex;
+}
+
+.steps__list--number {
+    font-size: 36px;
+}
+
+.steps__list--space {
+    margin-left: 24px;
+}
+
+.steps__list--title {
+    color: #243E63;
+    font-weight: 500;
+}
+
+.steps__list--para {
+    padding-top: 12px;
+}
+
+.steps__img {
+    width: 50%;
+}
+
+.steps__text {
+    width: 50%;
+    padding: 32px 0;
+}
+
+/*
+
+Values 
+
+*/
+
+.values__wrapper {
+    padding: 80px 0;
+    display: flex;
+}
+
+.value__text {
+    width: 50%;
+    padding: 32px 0;
+    text-align: left;
+}
+
+.value__text--para {
+    padding-top: 32px;
+
+}
+
+.values__img {
+    width: 50%;
+}
+
+.values__principles {
+    display: flex;
+}
+
+.values__principles--af {
+    padding: 32px 32px 0 0 ;
+}
+
+.values__principles--pro {
+    padding-top: 32px;
+}
+
+.values__principle--head {
+    display: flex;
+    align-items: center;
+}
+
+.principle__spacing {
+    margin-left: 20px;
+}
+
+.values__icon {
+    padding-bottom: 12px;
+}
+
+.values__btn {
+    transition: 300ms ease;
+    margin-top: 48px;
+}
+
+/*
+
+Pricing
+
+*/
+
+.pricing__wrapper {
+    padding: 80px 0;
+    text-align: center;
+    
+}
+
+.price__small {
+    margin-bottom: 16px;
+}
+
+.price__para {
+    margin-top: 16px;
+}
+
+.price__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan__personal {
+    border: solid rgb(226, 232, 240) 2px;
+    text-align: center;
+    padding: 0 24px;
+    margin: 32px 40px 0 0;
+    border-radius: 16px;
+}
+
+.plan__personal--container{
+    padding: 32px 0;
+}
+
+.plan__title {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.plan__time {
+    color: #7C8BA1;
+    opacity: 0.6;
+    letter-spacing: 1.2px;
+}
+
+.plan__personal--benefits {
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+    padding: 36px;
+    margin: 0 -24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    padding-top: 20px;
+}
+
+.btn_green {
+    padding: 32px 64px;
+}
+
+.btn_green button {
+    background-color: rgb(56, 178, 172) ;
+}
+
+.business_purple {
+    background-color: #6145ff;
+    opacity: 0.99;
+    color: white;
+}
+
+.btn__orange { 
+    padding: 32px 64px;
+}
+
+.btn__orange button {
+    background-color:  rgb(245, 101, 101) ;
+}
+
+
+.btn__pur {
+    padding: 32px 64px;
+}
+
+.btn__pur button {
+    background-color: white;
+    color: #6145ff;
+}
+
+.white-price {
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+/*
+
+Testomonials
+
+*/
+
+.flexer {
+    display: flex;
+    padding: 80px 0;
+}
+
+.test__img {
+    width: 50%;
+}
+
+.test__wrapper {
+    width: 50%;
+    margin-left: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.test__spacing--para {
+    margin-top: 24px;
+}
+
+.test__para--pad {
+    font-size: 16px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.test__padding {
+    font-size: 20px;
+}
+
+.test__icons {
+    padding: 40px 0 16px 0;
+}
+
+.test__para--pad {
+    padding: 20px 0;
+}
+
+/* 
+
+contacts
+
+*/
+
+.contact__wrapper {
+    width: 100%;
+    margin: 100px 0;
+    padding: 100px 0;
+    background-color: #6145ff;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__wrap {
+    display: flex;
+    margin-left: 24px;
+}
+
+.contact__btn--orange {
+    margin-right: 20px;
+}
+
+.contact__btn--orange button {
+    background-color:  rgb(245, 101, 101);
+}
+
+.contact__btn--pur button {
+    background-color: transparent;
+    border: white 2px solid;
+}
+
+.contact__title {
+    font-size: 30px;
+}
