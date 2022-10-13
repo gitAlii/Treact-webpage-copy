@@ -638,3 +638,21 @@ contacts
 .contact__title {
     font-size: 30px;
 }
+
+/*
+
+Footer
+
+*/
+
+#footer {
+    background-color: #6145ff;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/5);
+    align-items: center;
+}
