@@ -10,6 +10,7 @@ box-sizing: border-box;
 
 html {
     scroll-behavior: smooth;
+    line-height: 1.5;
  }
   
 .title {
@@ -24,7 +25,7 @@ html {
  
 
 .container {
-    margin: 16px;
+    margin: 0 16px;
 }
 
 .row {
@@ -60,7 +61,6 @@ button {
     color: rgba(247, 250, 252, 1);
     border: none;
     padding: 16px 36px;
-    
 }
 
 button:hover {
@@ -284,6 +284,9 @@ Features
     padding: 32px 8px;
 }
 
+
+
+
 .service__text {
     margin: 8px 0 0 16px;
     text-align: left;
@@ -487,6 +490,7 @@ Pricing
 
 .plan__personal--container{
     padding: 32px 0;
+    margin: 0 48px;
 }
 
 .plan__title {
@@ -518,7 +522,7 @@ Pricing
 }
 
 .btn_green {
-    padding: 32px 64px;
+    padding: 32px 10px;
 }
 
 .btn_green button {
@@ -532,7 +536,7 @@ Pricing
 }
 
 .btn__orange { 
-    padding: 32px 64px;
+    padding: 32px 10px;
 }
 
 .btn__orange button {
@@ -541,7 +545,7 @@ Pricing
 
 
 .btn__pur {
-    padding: 32px 64px;
+    padding: 32px 10px;
 }
 
 .btn__pur button {
@@ -552,6 +556,10 @@ Pricing
 .white-price {
     color: white;
     letter-spacing: 1.2px;
+}
+
+.btn__ani:hover {
+    cursor: pointer;
 }
 
 /*
@@ -624,12 +632,17 @@ contacts
 
 .contact__btn--orange {
     margin-right: 20px;
+
 }
 
 .contact__btn--orange button {
     background-color:  rgb(245, 101, 101);
 }
 
+.contact__btn--orange:hover {
+    background-color: rgb(240, 100, 100);
+    overflow: hidden;
+}
 .contact__btn--pur button {
     background-color: transparent;
     border: white 2px solid;
@@ -645,14 +658,88 @@ Footer
 
 */
 
-#footer {
+footer {
+    padding: 0 16px;
     background-color: #6145ff;
+    color: white;
     width: 100%;
 }
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.link__main{
     width: calc(100%/5);
+    margin-top: 50px;
+    text-align: left;
+}
+
+.link__title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.link-text{
+    padding-top: 12px;
+}
+
+.no__cursor {
+    cursor: none;
+}
+
+.footer__sperator {
+    margin: 64px 0;
+    border: 1px solid #7C8BA1;
+}
+
+.footer__logos {
+    height: 32px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.footer__logo--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    height: 32px;
+    padding-right: 8px;
+}
+
+.footer__logo--text {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.copyr {
+    color: #CBD5E0;
+    font-size: 16px; 
+}
+
+.social__links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.icon {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius:  50%;
+    border: white 2px;
+    background-color: white;
+}
+
+.icon i {
+    color: black;
 }
