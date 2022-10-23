@@ -65,7 +65,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(66 153 225 );
+    filter: brightness(90%)
 }
 
 /*
@@ -138,7 +138,7 @@ nav {
 }
 
 .nav__list--item-primary:hover {
-    opacity: 0.9;
+    filter: brightness(90%)
 }
 
 /*
@@ -212,7 +212,7 @@ Emailing section
 
 .c button:hover {
     cursor: pointer;
-    background-color: rgb(66 153 225 );
+    brightness: 
 }
 
 
@@ -492,6 +492,7 @@ Pricing
     padding: 32px 0;
     margin: 0 48px;
 }
+
 
 .plan__title {
     font-size: 20px;
