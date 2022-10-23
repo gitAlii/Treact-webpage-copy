@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
     line-height: 1.5;
  }
+
+div {
+    display: block;
+}
   
 .title {
     font-size: 48px;
@@ -67,6 +71,8 @@ button:hover {
     cursor: pointer;
     filter: brightness(90%)
 }
+
+
 
 /*
 
@@ -148,12 +154,12 @@ Home
 */
 
 #home {
-    padding: 60px 0 80px 0;
+    padding: 24px;
 }
 
 .home__wrapper {
     display: flex;
-    padding: 1.5rem 0;
+    padding: 24px 0;
 }
 
 .home__text {
@@ -481,16 +487,28 @@ Pricing
 }
 
 .plan__personal {
-    border: solid rgb(226, 232, 240) 2px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%); /* box shadow to add effect of borders w/o using border so doesnt effect plan__style div */
     text-align: center;
     padding: 0 24px;
     margin: 32px 40px 0 0;
     border-radius: 16px;
-}
+    position: relative;    /*position relative to control the absolute in child, overflow:hidden to stop the bright box being a box instead of filling in the wrapper/card */
+    overflow: hidden;    
+    
+}   
 
 .plan__personal--container{
     padding: 32px 0;
     margin: 0 48px;
+}
+
+.plan__style {
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
 
@@ -743,4 +761,62 @@ footer {
 
 .icon i {
     color: black;
+}
+
+/*
+
+Adding responsivness
+
+*/
+
+
+@media (max-width: 1000px) {
+    .row {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .home__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home__text {
+        width: 100%;
+        max-width: 680px;
+    }
+
+    .home__text--head {
+        font-size: 32px;
+        text-align: center;
+    
+    }
+    .home__text--para {
+        text-align: center;
+        font-size: 16px;
+        padding: 32px 0;
+       
+    }
+
+    .home__customers { 
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c input {
+        font-size: 16px;
+    }
+
+    .c button {
+        font-size: 16px;
+    }
+
+
+
+
 }
