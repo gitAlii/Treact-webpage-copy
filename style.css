@@ -147,6 +147,7 @@ nav {
     filter: brightness(90%)
 }
 
+.tripleLines {}
 /*
 
 Home
@@ -344,9 +345,17 @@ Work section
     padding: 16px 0 0 0;
 }
 
-.work__img {
+.work__photo {
+    margin: 0 auto;
     width: 50%;
 }
+
+.work__img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
 
 .work__btn {
     margin-top: 32px;
@@ -393,10 +402,13 @@ Steps
 }
 
 .steps__img {
-    width: 50%;
+    width: calc(100%/2);
+    object-fit: contain;
+    padding-right: 24px;
 }
 
 .steps__text {
+    object-fit: contain;
     width: 50%;
     padding: 32px 0;
 }
@@ -442,6 +454,7 @@ Values
 .values__principle--head {
     display: flex;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 .principle__spacing {
@@ -456,6 +469,21 @@ Values
     transition: 300ms ease;
     margin-top: 48px;
 }
+
+.values__dollar {
+    background-color: #9ae64b;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.feather {
+    opacity: 30%;
+    width: 70%;
+}
+
 
 /*
 
@@ -854,5 +882,12 @@ Adding responsivness
         width: calc(100%/2);
     }
 
+    .contact__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .contact__title{
+        padding: 16px 0;
+    }
 }
