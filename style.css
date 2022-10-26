@@ -157,10 +157,80 @@ nav {
     color: #6145ff;
 }
 
-
-.tripleLines {
-    
+.btn__menu {
+    background-color: transparent;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    color: black;
+    display: none;
 }
+
+.menu__backdrop {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 200px;
+    z-index: 100;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 30%);
+    justify-content: center;
+    opacity: 0;       
+    transition: all 0.3s;
+    visibility: hidden;
+    display: flex;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.open--menu {
+    max-height: 50vh;
+}
+
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: black;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.menu__list {
+    margin: 8px 0;
+    list-style-type: none;
+}
+
+.menu__link {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+    cursor: pointer;
+    text-underline-position: under;
+    text-decoration: underline 2px #6145ff;
+    color: #6145ff;
+}
+
+.menu__list--btn {
+    font-size: 18px;
+}
+
 /*
 
 Home
@@ -798,7 +868,19 @@ Adding responsivness
 */
 
 
-@media (max-width: 1000px) {
+@media (max-width: 815px) {
+    .btn__menu {
+        display: contents !important;
+    }
+    
+    .menu__backdrop {
+        display: flex;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
     .row {
         width: 100%;
         max-width: 700px;
