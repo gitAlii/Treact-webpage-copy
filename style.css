@@ -57,19 +57,19 @@ a {
     color: #7C8BA1;
 }
 
-button {
+.btn__pur {
     font-size: 16px;
     font-weight: bold;
     border-radius: 99999px;
     background-color: rgba(100, 21, 255, 1);
     color: rgba(247, 250, 252, 1);
     border: none;
-    padding: 16px 36px;
+    padding: 12px 32px;
 }
 
-button:hover {
+.btn__pur:hover {
     cursor: pointer;
-    filter: brightness(90%)
+    filter: brightness(90%);
 }
 
 
@@ -115,6 +115,7 @@ nav {
 .nav__list {
     display: flex;
     justify-content: space-around;
+    color: black;
    
 }
 
@@ -127,7 +128,8 @@ nav {
 }
 
 .link__hover--effect:hover {
-    text-decoration: underline 3px;
+    text-underline-position: under;
+    text-decoration: underline 2px;
     color: #6145ff;
 }
 
@@ -147,7 +149,18 @@ nav {
     filter: brightness(90%)
 }
 
-.tripleLines {}
+.nav__list--price{
+    color: black;
+}
+
+.nav__list--price:hover {
+    color: #6145ff;
+}
+
+
+.tripleLines {
+    
+}
 /*
 
 Home
@@ -585,16 +598,6 @@ Pricing
 
 .btn__orange button {
     background-color:  rgb(245, 101, 101) ;
-}
-
-
-.btn__pur {
-    padding: 32px 10px;
-}
-
-.btn__pur button {
-    background-color: white;
-    color: #6145ff;
 }
 
 .white-price {

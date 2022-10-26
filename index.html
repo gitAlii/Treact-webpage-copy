@@ -21,7 +21,11 @@
                     <ul class="nav__list">
                         <li class="nav__list--item link__hover--effect" >About</li>
                         <li class="nav__list--item link__hover--effect" >Blog</li>
-                        <li class="nav__list--item link__hover--effect" >Pricing</li>
+                        <li class="nav__list--item link__hover--effect" >
+                            <a class="nav__list--price" href="#pricing">
+                                Pricing
+                            </a>
+                        </li>
                         <li class="nav__list--item link__hover--effect" >Contact Us</li>
                         <li class="nav__list--item link__hover--effect nav__login">Login</li>
                         <li class="nav__list--item">
@@ -31,10 +35,32 @@
                             Sign Up
                             </a>
                         </li>
-                        <button class="btn__menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tripleLines"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                        </button>
                     </ul>
+                    <button class="btn__menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tripleLines"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul>
+                            <li class="menu__list">
+                                <a href="#work" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#work" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#work" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#work" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#work" class="menu__link">About</a>
+                            </li>
+                        </ul>
+                    </div>
                     </nav>
                 </div>
             </div>
@@ -138,7 +164,7 @@
                         <p class="work__text--small small">QUALITY WORK</p>
                         <h2 class="work__text--title">Designed & Developed by <span class="purple">Professionals.</span></h2>
                         <p class="work__text--para grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button class="work__btn">Learn More</button>
+                        <button class="work__btn btn__pur">Learn More</button>
                     </div>
                     <div class="work__photo">
                         <img class="work__img" src="./Assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="">
@@ -219,7 +245,7 @@
                             </div>
                            
                         </div>
-                        <button class="values__btn">Learn More</button>
+                        <button class="values__btn btn__pur">Learn More</button>
                     </div>
                     <img class="values__img" src="./Assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="">
                 </div>
@@ -257,7 +283,7 @@
                                 </span>
                             </div>
                             <div class="btn_green btn__ani">
-                                <button>BUY NOW</button>
+                                <button class="btn__pur">BUY NOW</button>
                             </div>
                         </div>
                         <div class="plan__personal">
@@ -283,7 +309,7 @@
                                 </span>
                             </div>
                             <div class="btn_green btn__ani">
-                                <button>BUY NOW</button>
+                                <button class="btn__pur">BUY NOW</button>
                             </div>
                         </div>
                         <div class="plan__personal">
@@ -309,7 +335,7 @@
                                 </span>
                             </div>
                             <div class="btn_green btn__ani">
-                                <button>BUY NOW</button>
+                                <button class="btn__pur">BUY NOW</button>
                             </div>
                         </div>
                         </div>
@@ -355,10 +381,10 @@
                     <h2 class="contact__title">Developers all over the world are happily using Treact.</h2>
                     <div class="button__wrap">
                         <div class="contact__btn--orange">
-                            <button>Get Started</button>
+                            <button class="btn__pur">Get Started</button>
                         </div>
-                        <div class="contact__btn--pur">
-                            <button>Contact Us</button>
+                        <div class="contact__btn--pur ">
+                            <button class="btn__pur">Contact Us</button>
                         </div>
                     </div>
                 </div>
